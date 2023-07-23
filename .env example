@@ -1,0 +1,8 @@
+# .env example
+
+FACEBOOK_ID=SKIP
+FACEBOOK_SECRET=SKIP
+FACEBOOK_CALLBACK=http://localhost:3000/auth/facebook/callback
+SESSION_SECRET=ThisIsMySecret
+MONGODB_URI=mongodb+srv://{自己的帳號密碼}@cluster0.0zausae.mongodb.net/expense-tracker?retryWrites=true&w=majority
+PORT=3000
