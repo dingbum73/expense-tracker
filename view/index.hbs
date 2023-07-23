@@ -1,0 +1,52 @@
+<div class="row mt-3">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body bg-light">
+      <div class="dropdown-center mb-2 d-flex justify-content-center">
+        <button class="btn btn-outline-secondary btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          選擇類別...
+        </button>
+        <ul class="dropdown-menu">
+          {{#each categories}}
+          <li><a class="dropdown-item" href="/category/{{this.id}}">{{this.name}}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="mb-2 d-inline-flex justify-content-center">
+        <p class="fs-5">總金額：</p>
+        <p class="fs-1 text-warning"><strong>{{totalAmount}}</strong></p>
+      </div>
+      {{#if categoryName}}
+      <p class="mx-2">{{categoryName}}：</p>
+      {{/if}}
+      <ul class="list-group ms-3">
+        {{#each records}}
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-auto me-auto">
+              {{{this.iconHTML}}}
+              <h4 style="display: inline;vertical-align: middle;">{{this.name}}</h4>
+            </div>
+            <div class="col-auto" id="amount">
+              <h4>${{this.amount}}</h4>
+            </div>
+            <div class="col-auto ">
+              <a class="btn btn-success" href="/records/{{this._id}}/edit">編輯</a>
+              <form action="/records/{{this._id}}?_method=DELETE" method="POST" style="display: inline;">
+                <button class="btn btn-danger" type="submit">刪除</button>
+              </form>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-1 text-center">
+  <div class="col-md-6 m-auto">
+    <a href="/records/new" class="btn btn-primary btn-block">新增支出</a>
+  </div>
+</div>
