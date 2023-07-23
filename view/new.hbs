@@ -1,0 +1,40 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body bg-light">
+      <div class="text-center description mb-3">
+        <p class="fs-6 fw-lighter fst-italic">* 為必填欄位</p>
+        <p class="fs-3">▼請輸入你的支出▼</p>
+      </div>
+      <div class="col-md-6 m-auto  input-data mb-3 ">
+        <form action="/records" method="post">
+          <div class="form-group mb-3">
+            <label class="form-label" for="name">名稱<span class="required text-danger">*</span>:</label>
+            <input class="form-control" id="name" type="text" name="name" value="{{name}}" required>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" for="createdAt">日期<span class="required text-danger">*</span>:</label>
+            <input class="form-control" id="createdAt" type="date" name="createdAt" value="{{createdAt}}" required>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" for="categoryId">類別<span class="required text-danger">*</span>:</label>
+            <select class="form-select" name="categoryId" id="categoryId" value="{{categoryId}}" required>
+              <option value="0">請選擇</option>
+              <option value="1">家居物業</option>
+              <option value="2">交通出行</option>
+              <option value="3">休閒娛樂</option>
+              <option value="4">餐飲食品</option>
+              <option value="5">其他</option>
+            </select>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" for="amount">金額<span class="required text-danger">*</span>:</label>
+            <input class="form-control" id="amount" type="number" name="amount" value="{{amount}}" required>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-block" type="submit">新增支出</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
