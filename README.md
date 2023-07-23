@@ -1,9 +1,11 @@
 # 記帳本
+![老爸私房錢作業_首頁](https://github.com/dingbum73/expense-tracker/assets/124600894/b647355a-35c2-4bd8-99bc-9f98e1bfdcb8)
 
 
 ## 介紹
 - 這是一個簡易的記帳本
 - 需註冊且登入才能使用，提供FACEBOOK登入方法
+![老爸私房錢作業](https://github.com/dingbum73/expense-tracker/assets/124600894/eb3d4462-c963-4a00-9f7d-d0af09229fbd)
 
 
 
@@ -16,6 +18,9 @@
 - 修改一筆支出
 - 刪除一筆支出
 - 可以依照類別篩選
+![老爸私房錢作業_註冊](https://github.com/dingbum73/expense-tracker/assets/124600894/2ea70376-06bd-4fea-8679-836a9fd88214)
+![老爸私房錢作業_新增](https://github.com/dingbum73/expense-tracker/assets/124600894/6d1154a0-cc70-461a-9b8b-e38045d2a4df)
+![老爸私房錢作業_篩選器](https://github.com/dingbum73/expense-tracker/assets/124600894/27aaa966-fd65-4560-8207-a8650bea498b)
 
 
 
